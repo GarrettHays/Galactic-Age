@@ -81,3 +81,17 @@ describe('convertMars', () => {
     expect(ageMars).toEqual(18);
   });
 });
+
+describe('convertJupiter', () => {
+  let age;
+
+  beforeEach (() => {
+    age = new GalacticAge(33,79);
+  });
+
+  test('should take total user age in days and divide by days for Jupiter year', () => {
+    age.earthDays();
+    let ageJupiter = age.convertJupiter();
+    expect(ageJupiter).toEqual(3);
+  });
+});
