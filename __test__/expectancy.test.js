@@ -75,6 +75,6 @@ describe('marsExpectancy', () => {
 
   test('should return years over life expectancy in Mars years if user age is greater than expectancy', () => {
     let marsTimeLeft = marsExpectancy(50, 42);
-    expect(venusTimeLeft).toEqual(8);
+    expect(marsTimeLeft).toEqual(8);
   });
 });
