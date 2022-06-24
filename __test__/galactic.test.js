@@ -33,4 +33,23 @@ describe('earthDays', () => {
     let totalLifeDays = age.earthDays();
     expect(totalLifeDays).toEqual(12045);
   });
+
+  test('should set total earth days alive value to GalacticAge object this.days', () => {
+    age.earthDays();
+    expect(age.days).toEqual(12045);
+  });
+});
+
+describe('mercuryDays', () => {
+  let age;
+
+  beforeEach (() => {
+    age = new GalacticAge(33,79);
+  });
+
+  test('should take total user age in days and divide by days for mercury year', () => {
+    age.earthDays();
+    let ageMercury = age.convertMercury();
+    expect(ageMercury).toEqual(136);
+  });
 });
