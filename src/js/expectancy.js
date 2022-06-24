@@ -9,5 +9,9 @@ export const lifeExpectancy = (age, expected) => {
 
 export const mercuryExpectancy = (mercuryAge, expected) => {
   let mercuryTimeLeft = (expected - mercuryAge);
+  if (mercuryTimeLeft < 0) {
+    let mercuryOvertime = Math.abs(mercuryTimeLeft);
+    return mercuryOvertime;
+  }
   return mercuryTimeLeft;
 };
