@@ -12,4 +12,9 @@ describe('LifeExpectancy', () => {
     let timeLeft = LifeExpectancy(33, 79);
     expect(timeLeft).toEqual(46);    
   });
+
+  test('should output years over life expectancy if user age is greater than expectancy', () => {
+    let timeLeft = LifeExpectancy(89, 79);
+    expect(timeLeft).toEqual(10);
+  });
 });
