@@ -16,12 +16,12 @@ _This project creates an application that intakes a users age and returns it wit
 
 ## Setup/Installation Requirements
 
-* _Copy the repository URL named Galactic Age_
+* _Copy the repository URL for project named Galactic-Age_
 * _Clone the copied repository to your desktop using the "git clone" command in a shell program_
-* _Open the cloned directory Galactic Age_
+* _Open the cloned directory Galactic-Age_
 * _Navigate to the root directory of the project in your terminal_
 * _Run "npm install" in your terminal_
-* _Running "npm test" allows you to test the business logic_
+* _Run"npm test" to test the business logic_
 
 ## Known Bugs
 
