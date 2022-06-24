@@ -21,4 +21,9 @@ export default class GalacticAge {
     let ageVenus = Math.round(this.days / 225);
     return ageVenus;
   }
+
+  convertMars() {
+    let ageMars = Math.round(this.days / 687);
+    return ageMars;
+  }
 }
