@@ -52,4 +52,9 @@ describe('venusExpectancy', () => {
     let venusTimeLeft = venusExpectancy(venusAge, 128);
     expect(venusTimeLeft).toEqual(74);
   });
+
+  test('should return years over life expectancy in Venus years if user age is greater than expectancy', () => {
+    let venusTimeLeft = venusExpectancy(150, 128);
+    expect(venusTimeLeft).toEqual(22);
+  });
 });
