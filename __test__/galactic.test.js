@@ -23,7 +23,7 @@ describe('earthDays', () => {
     age = new GalacticAge(33,79);
   });
 
-  test('should save user age input as variable', () => {
+  test('should save user age input in days as variable', () => {
     let totalDaysAge = age.earthDays();
     let totalYearsAge = totalDaysAge / 365;
     expect(totalYearsAge).toEqual(33);
