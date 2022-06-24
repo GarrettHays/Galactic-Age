@@ -15,3 +15,17 @@ describe('galacticAge', () => {
     expect(age.expected).toEqual(79);
   });
 });
+
+describe('earthDays', () => {
+  let age;
+
+  beforeEach (() => {
+    age = new GalacticAge(33,79);
+  });
+
+  test('should save user age input as variable', () => {
+    let totalDaysAge = age.earthDays();
+    let totalYearsAge = totalDaysAge / 365;
+    expect(totalYearsAge).toEqual(33);
+  });
+});
