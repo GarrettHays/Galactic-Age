@@ -1,4 +1,4 @@
-import {lifeExpectancy, mercuryExpectancy, venusExpectancy} from '../src/js/expectancy.js';
+import {lifeExpectancy, mercuryExpectancy, venusExpectancy, marsExpectancy} from '../src/js/expectancy.js';
 import GalacticAge from '../src/js/galactic.js';
 
 describe('lifeExpectancy', () => {
@@ -56,5 +56,20 @@ describe('venusExpectancy', () => {
   test('should return years over life expectancy in Venus years if user age is greater than expectancy', () => {
     let venusTimeLeft = venusExpectancy(150, 128);
     expect(venusTimeLeft).toEqual(22);
+  });
+});
+
+describe('marsExpectancy', () => {
+  let age;
+
+  beforeEach (() => {
+    age = new GalacticAge(33,79);
+  });
+
+  test('should calculate years left in Mars years', () => {
+    age.earthDays();
+    let marsAge = age.convertMars();
+    let marsTimeLeft = marsExpectancy(marsAge, 42);
+    expect(marsTimeLeft).toEqual(74);
   });
 });
