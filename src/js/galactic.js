@@ -11,4 +11,9 @@ export default class GalacticAge {
     this.days = totalLifeDays;
     return totalLifeDays;
   }
+
+  convertMercury() {
+    let ageMercury = Math.round(this.days / 88);
+    return ageMercury;
+  }
 }
