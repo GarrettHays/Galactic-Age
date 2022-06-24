@@ -1,8 +1,8 @@
 # Galactic Age
 
-#### This application was completed at the conclusion of week 5 at Epicodus. 
-
 #### By Garrett Hays
+
+#### This application was completed at the conclusion of week 5 at Epicodus.
 
 ## Technologies Used
 
