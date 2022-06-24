@@ -33,3 +33,8 @@ export const marsExpectancy = (marsAge, expected) => {
   }
   return marsTimeLeft;
 };
+
+export const jupiterExpectancy = (jupiterAge, expected) => {
+  let jupiterTimeLeft = (expected - jupiterAge);
+  return jupiterTimeLeft;
+};
