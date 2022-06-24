@@ -40,16 +40,30 @@ describe('earthDays', () => {
   });
 });
 
-describe('mercuryDays', () => {
+describe('convertMercury', () => {
   let age;
 
   beforeEach (() => {
     age = new GalacticAge(33,79);
   });
 
-  test('should take total user age in days and divide by days for mercury year', () => {
+  test('should take total user age in days and divide by days for Mercury year', () => {
     age.earthDays();
     let ageMercury = age.convertMercury();
     expect(ageMercury).toEqual(137);
+  });
+});
+
+describe('convertVenus', () => {
+  let age;
+
+  beforeEach (() => {
+    age = new GalacticAge(33,79);
+  });
+
+  test('should take total user age in days and divide by days for Venus year', () => {
+    age.earthDays();
+    let ageVenus = age.convertVenus();
+    expect(ageVenus).toEqual(54);
   });
 });
