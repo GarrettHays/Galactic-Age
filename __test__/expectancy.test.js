@@ -78,3 +78,18 @@ describe('marsExpectancy', () => {
     expect(marsTimeLeft).toEqual(8);
   });
 });
+
+describe('jupiterExpectancy', () => {
+  let age;
+
+  beforeEach (() => {
+    age = new GalacticAge(33,79);
+  });
+
+  test('should calculate years left in Jupiter years', () => {
+    age.earthDays();
+    let jupiterAge = age.convertJupiter();
+    let jupiterTimeLeft = jupiterExpectancy(jupiterAge, 7);
+    expect(jupiterTimeLeft).toEqual(4);
+  });
+});
