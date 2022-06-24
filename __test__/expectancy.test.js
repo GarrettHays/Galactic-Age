@@ -70,6 +70,11 @@ describe('marsExpectancy', () => {
     age.earthDays();
     let marsAge = age.convertMars();
     let marsTimeLeft = marsExpectancy(marsAge, 42);
-    expect(marsTimeLeft).toEqual(74);
+    expect(marsTimeLeft).toEqual(24);
+  });
+
+  test('should return years over life expectancy in Mars years if user age is greater than expectancy', () => {
+    let marsTimeLeft = marsExpectancy(50, 42);
+    expect(venusTimeLeft).toEqual(8);
   });
 });
