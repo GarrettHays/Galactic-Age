@@ -50,6 +50,6 @@ describe('mercuryDays', () => {
   test('should take total user age in days and divide by days for mercury year', () => {
     age.earthDays();
     let ageMercury = age.convertMercury();
-    expect(ageMercury).toEqual(136);
+    expect(ageMercury).toEqual(137);
   });
 });
