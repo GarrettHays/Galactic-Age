@@ -94,7 +94,7 @@ describe('jupiterExpectancy', () => {
   });
 
   test('should return years over life expectancy in Jupiter years if user age is greater than expectancy', () => {
-    let jupiterTimeLeft = jupiterExpectancy(8, 7);
-    expect(jupiterTimeLeft).toEqual(1);
+    let jupiterTimeLeft = jupiterExpectancy(12, 7);
+    expect(jupiterTimeLeft).toEqual(5);
   });
 });
