@@ -1,17 +1,18 @@
 # Galactic Age
 
-#### (Brief Description of Application)
+#### This application was completed at the conclusion of week 5 at Epicodus. 
 
-#### By (Your Name Here)
+#### By Garrett Hays
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* Javascript
+* NPM
+* Node.js
+* Webpack
 
 ## Description
+_This project creates an application that intakes a users age and returns it with what their age would be on Earth, Mercury, Venus, Mars and Jupiter. It also takes into account a user's life expectancy and returns the time they have left on each given planet. Finally, if a user is old and on life overtime, it tells them how much time they've stolen from death (years past life expectancy)._
 
 ## Setup/Installation Requirements
 
@@ -31,4 +32,4 @@
 
 MIT
 
-Copyright (c) _06/23/22_ _Garrett Hays_ 
+Copyright (c) _06/24/22_ _Garrett Hays_ 
