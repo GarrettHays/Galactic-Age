@@ -1,4 +1,4 @@
-import {lifeExpectancy, mercuryExpectancy, mercuryExpected} from '../src/js/expectancy.js';
+import {lifeExpectancy, mercuryExpectancy} from '../src/js/expectancy.js';
 import GalacticAge from '../src/js/galactic.js';
 
 describe('lifeExpectancy', () => {
@@ -13,7 +13,7 @@ describe('lifeExpectancy', () => {
     expect(timeLeft).toEqual(46);    
   });
 
-  test('should output years over life expectancy if user age is greater than expectancy', () => {
+  test('should return years over life expectancy if user age is greater than expectancy', () => {
     let timeLeft = lifeExpectancy(89, 79);
     expect(timeLeft).toEqual(10);
   });
@@ -25,10 +25,16 @@ describe('mercuryExpectancy', () => {
   beforeEach (() => {
     age = new GalacticAge(33,79);
   });
+
   test('should calculate years left in Mercury years', () => {
     age.earthDays();
     let mercuryAge = age.convertMercury();
     let mercuryTimeLeft = mercuryExpectancy(mercuryAge, 328);
     expect(mercuryTimeLeft).toEqual(191);
+  });
+
+  test('should return years over life expectancy in Mercury years if user age is greater than expectancy', () => {
+    let mercuryTimeLeft = mercuryExpectancy(330, 328);
+    expect(mercuryTimeLeft).toEqual(2);
   });
 });
