@@ -15,3 +15,8 @@ export const mercuryExpectancy = (mercuryAge, expected) => {
   }
   return mercuryTimeLeft;
 };
+
+export const venusExpectancy = (venusAge, expected) => {
+  let venusTimeLeft = (expected - venusAge);
+  return venusTimeLeft;
+};
