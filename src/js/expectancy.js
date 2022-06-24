@@ -24,3 +24,8 @@ export const venusExpectancy = (venusAge, expected) => {
   }
   return venusTimeLeft;
 };
+
+export const marsExpectancy = (marsAge, expected) => {
+  let marsTimeLeft = (expected - marsAge);
+  return marsTimeLeft;
+};
