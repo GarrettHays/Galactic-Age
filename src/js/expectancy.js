@@ -36,5 +36,9 @@ export const marsExpectancy = (marsAge, expected) => {
 
 export const jupiterExpectancy = (jupiterAge, expected) => {
   let jupiterTimeLeft = (expected - jupiterAge);
+  if (jupiterTimeLeft < 0) {
+    let jupiterOvertime = Math.abs(jupiterTimeLeft);
+    return jupiterOvertime;
+  }
   return jupiterTimeLeft;
 };
