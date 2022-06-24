@@ -27,5 +27,9 @@ export const venusExpectancy = (venusAge, expected) => {
 
 export const marsExpectancy = (marsAge, expected) => {
   let marsTimeLeft = (expected - marsAge);
+  if (marsTimeLeft < 0) {
+    let marsOvertime = Math.abs(marsTimeLeft);
+    return marsOvertime;
+  }
   return marsTimeLeft;
 };
