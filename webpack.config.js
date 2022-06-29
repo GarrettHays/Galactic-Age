@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin'); 
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/js/galactic.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
@@ -14,11 +14,11 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(), 
-    new HtmlWebpackPlugin({
-      title: 'Galactic-Age',
-      template: './src/index.html',
-      inject: 'body'
-    })
+    // new HtmlWebpackPlugin({
+    //   title: 'Galactic-Age',
+    //   template: './src/index.html',
+    //   inject: 'body'
+    // })
   ],
   module: {
     rules: [
